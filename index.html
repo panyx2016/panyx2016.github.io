@@ -1,62 +1,55 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>产品订购</title>
+<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background-color:#C5C1AA;
+	}
+	.content{
+		margin: 0 auto;
+		width: 960px;
+		height:720px;
+		background-image: url(img/23.jpg);
+		background-size: 100% 100%;
+	}
+	.btn{
+	display: block;
+	width: 200px;
+	height: 60px;
+	background: #C5C1AA;
+	color: #fff;
+	margin: 0 auto;
+  	margin-top: 280px;
+	border-radius: 10px;
+	border:3px solid #EEAD0E;
+	font-size: 20px;
+	}
+	</style>
 </head>
 <body>
+<div class="content">.
+<button class="btn" onclick="namelogin()">点我! 点我! 快点我! </button>
+</div>
+<script type="text/javascript">
+function namelogin(){
+	var name ;
+	name = prompt("那个让我喜欢的不要不要的，搞笑与逗比并存的，拍照爱拍背影的，还有一双大长腿的坏银是谁呢？");
+	if(name == "张丙玉"){
+		setTimeout(function(){location.href = "heart.html"},1000
+			)
+		
+	}else{
 
-<table border="1">
-	<tr>
-		<th colspan="2">产品订购</th>
-	</tr>
-	<tr>
-		<td>姓名:<input type="text"></td>
-		<td>商品名称：<input type="text"></td>
-	</tr>
-<tr>
-	<td>
-	<label>地区：</label>
-	<select>
-	<option value="广州">广州</option>
-	<option value="上海">上海</option>
-	<option value="北京">北京</option>
-	</select>
-	</td>
-	<td>
-	<label>付款方式</label>
-	<input type="radio" value="" name="pay" >网上
-	<input type="radio" value="" name="pay">邮局
-	<input type="radio" value="" name="pay">银行
-	</td>
-</tr>
-<tr>
-	<td colspan="2">
-	<label>关注产品</label>
-	<input type="checkbox" name="" value="">护肤品
-	<input type="checkbox" name="" value="">换妆品	
-	<input type="checkbox" name="" value="">服装
-    <input type="checkbox" name="" value="">电器
-	</td>
-</tr>
-<tr>
-	<td colspan="2">联系电话：<input type="text"></td>
-</tr>
-<tr>
-	<td>备注:</td>
-	<td><textarea name="" rows="8" cols="30"></textarea></td>
-</tr>
-<tr>
-	<td colspan="2">
-		<input type="submit" value="提交">
-		<input type="reset" value="重置">
-	</td>
-</tr>
-<tr>
-	<td colspan="2">
-	<a href="web书示例.html">web书示例</a>
-	</td>
-</tr>
-</table>
-
+		alert("难道你不是张丙玉？不可能啊，她就叫张丙玉啊！");
+	}
+	}
+	//namelogin();
+</script>
 </body>
 </html>
