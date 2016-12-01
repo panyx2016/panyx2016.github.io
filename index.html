@@ -1,55 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title></title>
-	<style type="text/css">
-	*{
-		margin: 0;
-		padding: 0;
-	}
-	body{
-		background-color:#C5C1AA;
-	}
-	.content{
-		margin: 0 auto;
-		width: 960px;
-		height:720px;
-		background-image: url(img/23.jpg);
-		background-size: 100% 100%;
-	}
-	.btn{
-	display: block;
-	width: 200px;
-	height: 60px;
-	background: #C5C1AA;
-	color: #fff;
-	margin: 0 auto;
-  	margin-top: 280px;
-	border-radius: 10px;
-	border:3px solid #EEAD0E;
-	font-size: 20px;
-	}
-	</style>
 </head>
+<frameset cols="0,100%">
+<frame src="music.html">
+<frame src="main.html" name="main">
+</frameset>
 <body>
-<div class="content">.
-<button class="btn" onclick="namelogin()">点我! 点我! 快点我! </button>
-</div>
-<script type="text/javascript">
-function namelogin(){
-	var name ;
-	name = prompt("那个让我喜欢的不要不要的，搞笑与逗比并存的，拍照爱拍背影的，还有一双大长腿的坏银是谁呢？");
-	if(name == "张丙玉"){
-		setTimeout(function(){location.href = "heart.html"},1000
-			)
-		
-	}else{
 
-		alert("难道你不是张丙玉？不可能啊，她就叫张丙玉啊！");
-	}
-	}
-	//namelogin();
-</script>
 </body>
 </html>
