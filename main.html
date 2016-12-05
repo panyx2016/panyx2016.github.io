@@ -42,7 +42,7 @@ function namelogin(){
 	name = prompt("那个让我喜欢的不要不要的，搞笑与逗比并存的，拍照爱拍背影的，还有一双大长腿的坏银是谁呢？");
 	if(name == "张丙玉"){
 		var send=document.getElementById('send'),
-	        times=10,
+	        times=11,
 	        timer=null;
 	        timer = setInterval(
                 function(){
@@ -50,11 +50,13 @@ function namelogin(){
                 	send.setAttribute("disabled","disabled");
                 	times--;
                 	send.value = "倒计时"+times+"秒";
+                	if(times == 1){
+                		send.value = "嘟嘟嘟嘟嘟嘟嘟嘟！";             		              		
+                	}
                 	if(times == 0){
-                		send.value = "点我! 点我! 快点我!";
-                		send.removeAttribute("disabled");
+                		send.removeAttribute("disabled"); 
                 		clearInterval(timer);
-                		times =10;
+                		times =11;
                 		location.href = "photo.html";
                 	}
                 }
